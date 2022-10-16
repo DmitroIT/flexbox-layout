@@ -1,0 +1,103 @@
+@import url(./normalize.css);
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+width: 30%;
+height: 400px;
+margin: 20px;
+display: flex;
+}
+
+.box__6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+flex: 0 1 3333%;
+background-color: blueviolet;
+color: blueviolet;
+text-align: center;
+border: 3px solid white;
+}
+
+.box__2 .block_2 {
+    flex: 1 0 50%;
+}
+
+.box__3 .block_1 {
+    flex: 1 0 75%;
+}
+
+.box__4 .block_2 {
+    flex: 1 0 75%;
+}
+
+.up, .down {
+    height: 50%;
+    display: flex;
+}
+
+.box__7 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.box__8 {
+    display: block;
+}
+
+.box__8 .up {
+    height: 25%;
+} 
+.box__8 .down {
+    height: 75%;
+}
+
+.box__8 .block_1 {
+    flex: 1 0 75%;
+}
+
+.box__8 .block_2 {
+    flex: 1 0 50%;
+}
+
+.reverse .down {
+    flex-direction: row-reverse;
+}
+
+.box_9 {
+    flex-direction: column;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 33%;
+}
+
+.row .block_1 {
+    flex: 1 0 66%;
+}
+
+.row_reverse {
+    flex-direction: row-reverse;
+}
+span {
+    display: none;
+}
